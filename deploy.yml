@@ -1,6 +1,6 @@
 - name: Basic server setup
   hosts: local
-  become: true
+  become: false
   tasks:
     - name: Copy the artifact to deployment directory
       debug:
