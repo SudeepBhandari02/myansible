@@ -1,0 +1,7 @@
+- name: Basic server setup
+  hosts: local
+  become: true
+  tasks:
+    - name: Copy the artifact to deployment directory
+      debug:
+        msg: "hello from ansible"
